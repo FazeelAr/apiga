@@ -1,10 +1,14 @@
 import { StrictMode } from 'react'
+import "./App.css";
+import "./index.css";
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import App from './App'
 import Home from './pages/Home'
 import About from './pages/About'
 import Register from './pages/Register'
+import Schedule from './pages/Schedule'
+import Team from './pages/Team'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,6 +18,8 @@ createRoot(document.getElementById('root')).render(
           <Route index element={<Home />} />
           <Route path='about/' element={<About />} />
           <Route path='register/' element={<Register />} />
+          <Route path='schedule/' element={<Schedule />} />
+          <Route path='team/' element={<Team />} />
         </Route>
       </Routes>
     </BrowserRouter>
