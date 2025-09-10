@@ -1,0 +1,30 @@
+import { motion } from "framer-motion";
+
+export default function TextBox({ title, text, width = 3 }) {
+  const widthMap = {
+    1: "max-w-2xl",
+    2: "max-w-4xl",
+    3: "max-w-6xl",
+    4: "max-w-8xl",
+  };
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className={`bg-white rounded-2xl shadow-lg p-6 my-3 mx-auto border border-green-200 ${widthMap[width]}`}
+    >
+      <h2 className=" text-2xl font-bold text-green-700 mb-2">{title}</h2>
+      <p className="text-black font-medium mb-4">
+        {text}
+      </p>
+
+      {/* <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <li>The evolving landscape of Internet policy</li>
+        <li>Critical issues in digital rights and cybersecurity</li>
+        <li>Multi-stakeholder approach to Internet Governance</li>
+        <li>Youth representation in policy and advocacy</li>
+      </ul> */}
+    </motion.div>
+  );
+}

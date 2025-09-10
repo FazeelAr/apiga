@@ -2,6 +2,7 @@ import React from "react";
 import APigaHeroTitle from "../components/APigaHeroTitle";
 import { Link } from "react-router-dom"
 import ObjectivesSection from "../components/ObjectiveCard";
+import TextBox from "../components/TextBox";
 
 function Home() {
     const objective = [
@@ -59,14 +60,47 @@ function Home() {
             variant: "lightGreen"
         },
     ];
+
+    // Parent
+    const apiga = (
+        <>
+            The Asia Pacific Internet Governance Academy (APIGA) is a distinguished
+            youth capacity-building initiative dedicated to nurturing the next
+            generation of Internet leaders in the Asia Pacific region. APIGA is
+            co-hosted annually by two prominent global entities:{" "}
+            <a
+                href="https://www.icann.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 underline"
+            >
+                The Internet Corporation for Assigned Names and Numbers (ICANN)
+            </a>{" "}
+            and {" "}
+            <a
+                href="https://www.icann.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 underline"
+            > The Korea Internet &amp; Security Agency (KISA).
+            </a> Through their combined expertise and commitment, these organizations provide
+            participants with comprehensive exposure to critical issues surrounding
+            Internet governance, cybersecurity, digital policy, and global Internet
+            operations.
+        </>
+    );
+
+    const icann = "The Internet Corporation for Assigned Names and Numbers (ICANN) is a global non-profit organization responsible for coordinating the unique identifiers that keep the Internet secure, stable, and interoperable. ICANN oversees the global Domain Name System (DNS), manages Internet Protocol (IP) addresses, and ensures that domain names (like .org, .com, or country codes) work everywhere in the world. ICANN follows a multistakeholder governance model, where governments, the private sector, civil society, academia, and technical experts all work together to make policies for the Internet’s naming and addressing systems. This inclusive approach ensures that decisions about the Internet are made transparently and with input from communities worldwide. Through its work, ICANN plays a vital role in maintaining the security, stability, and resiliency of the Internet, supporting its growth as a single, global, and open resource."
     return (
         <>
 
             {/* Content wrapper with proper spacing */}
             <main className="min-h-screen bg-gray-50">
                 <APigaHeroTitle />
-                <ObjectivesSection title="Objectives OF APIGA Pakistan" objectives={objective}/>
-                <ObjectivesSection title="Expected Outcomes" objectives={outcomes}/>
+                <TextBox title={'About APIGA'} text={apiga} />
+                <TextBox title={'About ICANN'} text={icann} />
+                <ObjectivesSection title="Objectives OF APIGA Pakistan" objectives={objective} />
+                <ObjectivesSection title="Expected Outcomes" objectives={outcomes} />
             </main>
         </>
     )

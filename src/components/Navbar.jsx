@@ -39,7 +39,7 @@ const Navbar = () => {
     return (
         <div className="w-full">
             {/* Main navbar */}
-            <nav className="bg-white shadow-lg border-b-4 border-blue-600 sticky top-0 z-50">
+            <nav className="bg-white shadow-lg border-b-4 border-green-600 sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
                         {/* Logo section */}
@@ -73,8 +73,8 @@ const Navbar = () => {
                                         key={item.path}
                                         to={item.path}
                                         className={`flex items-center space-x-2 px-3 xl:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 group relative ${isActive(item.path)
-                                                ? 'bg-blue-600 text-white shadow-md'
-                                                : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
+                                                ? 'bg-green-400 text-white shadow-md'
+                                                : 'text-gray-700 hover:text-green-700 hover:bg-green-50'
                                             }`}
                                     >
                                         <IconComponent
@@ -96,7 +96,7 @@ const Navbar = () => {
                         <div className="lg:hidden">
                             <button
                                 onClick={toggleMobileMenu}
-                                className="text-gray-700 hover:text-blue-700 p-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="text-gray-700 hover:text-green-700 p-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500"
                                 aria-label="Toggle mobile menu"
                                 aria-expanded={isMobileMenuOpen}
                             >
@@ -119,8 +119,8 @@ const Navbar = () => {
                                     key={item.path}
                                     onClick={() => handleNavigation(item.path)}
                                     className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 text-left ${isActive(item.path)
-                                            ? 'bg-blue-600 text-white shadow-md'
-                                            : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50 hover:shadow-sm'
+                                            ? 'bg-green-600 text-white shadow-md'
+                                            : 'text-gray-700 hover:text-green-700 hover:bg-green-50 hover:shadow-sm'
                                         }`}
                                 >
                                     <IconComponent size={20} />

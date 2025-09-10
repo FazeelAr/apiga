@@ -100,7 +100,7 @@ const APigaHeroTitle = () => {
             Shaping the future of{' '}
             <span className="font-semibold text-green-300 relative">
               Internet
-              <motion.div
+              <motion.span
                 className="absolute -bottom-1 left-0 h-0.5 bg-green-400"
                 initial={{ width: 0 }}
                 animate={{ width: '100%' }}
