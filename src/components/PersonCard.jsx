@@ -10,43 +10,45 @@ const PersonCard = ({
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className={`bg-white rounded-2xl shadow-lg p-8 text-center transition-all duration-300 hover:shadow-xl hover:scale-105 ${className}`}>
+    <div className={`bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105 ${className}`}>
       {/* Profile Image */}
-      <div className="relative mb-6">
+      <div className="relative p-6 pb-4">
         <div 
-          className={`w-32 h-32 mx-auto rounded-full overflow-hidden transition-all duration-300 ${
+          className={`w-40 h-40 mx-auto rounded-full overflow-hidden transition-all duration-300 ${
             isHovered ? 'ring-4 ring-green-500' : 'ring-0'
           }`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
           <img 
-            src={imageUrl} 
+            src={imageUrl || 'https://via.placeholder.com/300x300/e5e7eb/6b7280?text=No+Image'} 
             alt={name}
             className="w-full h-full object-cover"
           />
         </div>
       </div>
 
-      {/* Name with LinkedIn */}
-      <div className="mb-4">
-        <a 
-          href={linkedinUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-2xl font-bold text-gray-800 hover:text-green-600 transition-colors duration-300 cursor-pointer"
-        >
-          {name}
-        </a>
-      </div>
+      {/* Name and Designation with Light Gray Background */}
+      <div className="bg-gray-100 px-6 py-4 text-center">
+        {/* Name with LinkedIn */}
+        <div className="mb-2">
+          <a 
+            href={linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl font-bold text-gray-800 hover:text-green-600 transition-colors duration-300 cursor-pointer block"
+          >
+            {name}
+          </a>
+        </div>
 
-      {/* Designation */}
-      <div className="text-lg text-green-600 font-medium">
-        {designation}
+        {/* Designation */}
+        <div className="text-base text-green-600 font-medium">
+          {designation}
+        </div>
       </div>
     </div>
   );
 };
-
 
 export default PersonCard;

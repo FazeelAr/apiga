@@ -8,9 +8,9 @@ const ObjectiveCard = ({
   index = 0 
 }) => {
   const variants = {
-    lightGreen: 'bg-gradient-to-br from-green-300 to-sky-500',
-    green: 'bg-gradient-to-br from-green-600 to-blue-700',
-    parrot: 'bg-white border border-green-200 shadow-md'
+    lightGreen: 'bg-green-300',
+    green: 'bg-green-600',
+    parrot: 'bg-white'
   };
 
   const textColors = {

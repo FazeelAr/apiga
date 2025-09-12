@@ -14,22 +14,22 @@ function Home() {
         {
             title: "Capacity Building",
             description: "Equip participants with practical skills to engage in national, regional, and global Internet governance processes.",
-            variant: "green"
+            variant: "parrot"
         },
         {
             title: "Youth Empowerment",
             description: "Create a platform for young people to voice their perspectives on digital rights, cybersecurity, emerging technologies, and Internet inclusion.",
-            variant: "lightGreen"
+            variant: "green"
         },
         {
             title: "Networking & Collaboration",
             description: "Connect participants with experts, policymakers, and peers in the Asia-Pacific Internet governance community.",
-            variant: "green"
+            variant: "parrot"
         },
         {
             title: "Local to Global Pathway",
             description: "Prepare participants to represent Pakistan in the regional APIGA and other international forums such as ICANN, IGF, and APRIGF.",
-            variant: "lightGreen"
+            variant: "green"
         },
     ];
 
@@ -42,22 +42,22 @@ function Home() {
         {
             title: "Practical Experience",
             description: "Exposure to simulations, case studies, and role-play exercises that mirror real-world Internet governance decision-making.",
-            variant: "green"
+            variant: "parrot"
         },
         {
             title: "Youth Leadership",
             description: "A pool of young leaders equipped to contribute to Pakistan’s digital policy discussions and global Internet governance dialogues.",
-            variant: "lightGreen"
+            variant: "green"
         },
         {
             title: "Stronger Representation",
             description: " More Pakistani youth participating in APIGA (regional), ICANN programs, and other global Internet platforms.",
-            variant: "green"
+            variant: "parrot"
         },
         {
             title: "Lasting Impact",
             description: "Creation of a growing alumni network to sustain engagement, mentor future participants, and strengthen Pakistan’s voice in digital governance.",
-            variant: "lightGreen"
+            variant: "green"
         },
     ];
 
@@ -91,6 +91,15 @@ function Home() {
     );
 
     const icann = "The Internet Corporation for Assigned Names and Numbers (ICANN) is a global non-profit organization responsible for coordinating the unique identifiers that keep the Internet secure, stable, and interoperable. ICANN oversees the global Domain Name System (DNS), manages Internet Protocol (IP) addresses, and ensures that domain names (like .org, .com, or country codes) work everywhere in the world. ICANN follows a multistakeholder governance model, where governments, the private sector, civil society, academia, and technical experts all work together to make policies for the Internet’s naming and addressing systems. This inclusive approach ensures that decisions about the Internet are made transparently and with input from communities worldwide. Through its work, ICANN plays a vital role in maintaining the security, stability, and resiliency of the Internet, supporting its growth as a single, global, and open resource."
+
+    const eligibility = `An applicant is eligible for the fellowship if s/he will:`
+    const points = ['1. Be a citizen of Pakistan.',
+        "2. Be between the age of 18 and 30 years.",
+        "3. Be an undergraduate or graduate student enrolled in any discipline or an early career professional.",
+        "4. Demonstrate interest in digital technologies, digital development, technology law, public policy, internet governance, digital rights, cybersecurity and closely related areas.",
+        "5. Be willing to attend the full event (November 17- November 18, 2025).",
+        "6. Be willing to continue to engage with the community after the event."
+    ]
     return (
         <>
 
@@ -99,6 +108,7 @@ function Home() {
                 <APigaHeroTitle />
                 <TextBox title={'About APIGA'} text={apiga} />
                 <TextBox title={'About ICANN'} text={icann} />
+                <TextBox title={'Eligibility Criteria:'} text={eligibility} points={points}/>
                 <ObjectivesSection title="Objectives OF APIGA Pakistan" objectives={objective} />
                 <ObjectivesSection title="Expected Outcomes" objectives={outcomes} />
             </main>

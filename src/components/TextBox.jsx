@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function TextBox({ title, text, width = 3 }) {
+export default function TextBox({ title, text, width = 3, points = [] }) {
   const widthMap = {
     1: "max-w-2xl",
     2: "max-w-4xl",
@@ -19,12 +19,11 @@ export default function TextBox({ title, text, width = 3 }) {
         {text}
       </p>
 
-      {/* <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>The evolving landscape of Internet policy</li>
-        <li>Critical issues in digital rights and cybersecurity</li>
-        <li>Multi-stakeholder approach to Internet Governance</li>
-        <li>Youth representation in policy and advocacy</li>
-      </ul> */}
+      <ul className="list-disc list-inside space-y-2 text-gray-700">
+        {points.map((p,ind)=>(
+          <li className="text-black font-medium" key={ind}>{"\t"}{p}</li>
+        ))}
+      </ul>
     </motion.div>
   );
 }
