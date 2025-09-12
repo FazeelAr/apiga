@@ -1,10 +1,10 @@
 import React  from "react";
-
+import TextBox from "../components/TextBox";
 function Schedule(){
     return (
     <>
         <main className="min-h-screen bg-gray-50">
-            <h1 className="text-black text-center my-12">Coming Soon!</h1>
+            <TextBox title="Coming Soon!"/>
         </main>
     </>
     )

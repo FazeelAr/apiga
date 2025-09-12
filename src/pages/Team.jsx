@@ -7,37 +7,37 @@ const Team = () => {
     {
       name: 'Nawal Munir',
       designation: 'Team Lead',
-      imageUrl: '/src/assets/Nawaal.jpg',
+      imageUrl: '/assets/Nawaal.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/nawalmunirahmad/'
     },
     {
       name: 'Muhammad Umair Ali',
       designation: 'Program and Fellowship Committee',
-      imageUrl: '/src/assets/Muhammad Umair ALi.jpg',
+      imageUrl: '/assets/Muhammad Umair Ali.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/muhammad-umair-ali-49b2981a1/'
     },
     {
       name: 'Uzair Farooqi',
       designation: 'Program and Fellowship Committee',
-      imageUrl: '/src/assets/uzair farooqi.jpg',
+      imageUrl: '/assets/uzair farooqi.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/uzair-farooqi/'
     },
     {
       name: 'Harisa Shahid',
       designation: 'Program and Fellowship Committee',
-      imageUrl: '/src/assets/Harisa.jpg',
+      imageUrl: '/assets/Harisa.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/harisa-shahid-b04923184/'
     },
     {
       name: 'Khushbakht',
       designation: 'Design Head',
-      imageUrl: '/src/assets/Khushbakht.jpg',
+      imageUrl: '/assets/Khushbakht.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/khush84kht/'
     },
     {
       name: 'Muhammad Sadeem Hannan',
       designation: 'Sponsorship Head',
-      imageUrl: '/src/assets/Sadeem.jpg',
+      imageUrl: '/assets/Sadeem.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/muhammad-sadeem-hannan/'
     }
   ];
