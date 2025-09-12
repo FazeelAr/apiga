@@ -22,8 +22,10 @@ const PersonCard = ({
         >
           <img 
             src={imageUrl || 'https://via.placeholder.com/300x300/e5e7eb/6b7280?text=No+Image'} 
+            srcSet={`${imageUrl} 400w, ${imageUrl} 800w`}
             alt={name}
             className="w-full h-full object-cover"
+            loading='lazy'
           />
         </div>
       </div>
