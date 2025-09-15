@@ -94,11 +94,11 @@ function Home() {
 
     const eligibility = `An applicant is eligible for the fellowship if s/he will:`
     const points = ['1. Be a citizen of Pakistan.',
-        "2. Be between the age of 18 and 30 years.",
-        "3. Be an undergraduate or graduate student enrolled in any discipline or an early career professional.",
-        "4. Demonstrate interest in digital technologies, digital development, technology law, public policy, internet governance, digital rights, cybersecurity and closely related areas.",
-        "5. Be willing to attend the full event (November 17- November 18, 2025).",
-        "6. Be willing to continue to engage with the community after the event."
+        "Be between the age of 18 and 30 years.",
+        "Be an undergraduate or graduate student enrolled in any discipline or an early career professional.",
+        "Demonstrate interest in digital technologies, digital development, technology law, public policy, internet governance, digital rights, cybersecurity and closely related areas.",
+        "Be willing to attend the full event (November 17- November 18, 2025).",
+        "Be willing to continue to engage with the community after the event."
     ]
     return (
         <>
@@ -108,9 +108,9 @@ function Home() {
                 <APigaHeroTitle />
                 <TextBox title={'About APIGA'} text={apiga} />
                 <TextBox title={'About ICANN'} text={icann} />
-                <TextBox title={'Eligibility Criteria:'} text={eligibility} points={points}/>
                 <ObjectivesSection title="Objectives OF APIGA Pakistan" objectives={objective} />
                 <ObjectivesSection title="Expected Outcomes" objectives={outcomes} />
+                <TextBox title={'Eligibility Criteria:'} text={eligibility} points={points}/>
             </main>
         </>
     )
