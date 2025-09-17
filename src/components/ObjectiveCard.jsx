@@ -1,35 +1,35 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
-const ObjectiveCard = ({ 
-  title, 
-  description, 
-  variant = 'green', 
-  index = 0 
+const ObjectiveCard = ({
+  title,
+  description,
+  variant = "green",
+  index = 0,
 }) => {
   const variants = {
-    lightGreen: 'bg-green-300',
-    green: 'bg-green-600',
-    parrot: 'bg-white'
+    lightGreen: "bg-green-600",
+    green: "bg-green-600",
+    parrot: "bg-white",
   };
 
   const textColors = {
-    lightGreen: 'text-white',
-    green: 'text-white',
-    parrot: 'text-gray-800'
+    lightGreen: "text-white",
+    green: "text-white",
+    parrot: "text-gray-800",
   };
 
   const titleColors = {
-    lightGreen: 'text-white',
-    green: 'text-white',
-    parrot: 'text-gray-900'
+    lightGreen: "text-white",
+    green: "text-white",
+    parrot: "text-gray-900",
   };
 
   const cardVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 50,
-      scale: 0.9
+      scale: 0.9,
     },
     visible: {
       opacity: 1,
@@ -38,17 +38,17 @@ const ObjectiveCard = ({
       transition: {
         duration: 0.6,
         delay: index * 0.2,
-        ease: [0.25, 0.46, 0.45, 0.94]
-      }
-    }
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },
+    },
   };
 
   const hoverVariants = {
     scale: 1.05,
     transition: {
       duration: 0.3,
-      ease: "easeInOut"
-    }
+      ease: "easeInOut",
+    },
   };
 
   return (
@@ -64,20 +64,20 @@ const ObjectiveCard = ({
       whileHover={hoverVariants}
     >
       <div>
-        <motion.h3 
+        <motion.h3
           className={`text-2xl font-bold mb-6 leading-tight ${titleColors[variant]}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: (index * 0.2) + 0.3 }}
+          transition={{ duration: 0.6, delay: index * 0.2 + 0.3 }}
         >
           {title}
         </motion.h3>
-        
-        <motion.p 
+
+        <motion.p
           className={`text-lg leading-relaxed ${textColors[variant]} opacity-90`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: (index * 0.2) + 0.5 }}
+          transition={{ duration: 0.6, delay: index * 0.2 + 0.5 }}
         >
           {description}
         </motion.p>
@@ -86,17 +86,16 @@ const ObjectiveCard = ({
   );
 };
 
-const ObjectivesSection = ({title,objectives}) => {
-
+const ObjectivesSection = ({ title, objectives }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.1
-      }
-    }
+        delayChildren: 0.1,
+      },
+    },
   };
 
   return (

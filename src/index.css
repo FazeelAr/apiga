@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-.roboto {
+/* Remove @font-face since Google Fonts is used */
+
+body,
+html,
+* {
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
 }
