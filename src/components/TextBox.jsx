@@ -14,16 +14,19 @@ export default function TextBox({ title, text, width = 3, points = [] }) {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`bg-white rounded-2xl shadow-lg p-6 my-3 mx-auto border border-green-200 ${widthMap[width]}`}
     >
-      <h2 className=" text-2xl font-bold text-green-700 mb-2">{title}</h2>
+      <h2 className=" text-2xl font-bold text-[#207140] mb-2">{title}</h2>
       <p className="text-black font-medium mb-4">
         {text}
       </p>
 
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        {points.map((p,ind)=>(
-          <li className="text-black font-medium" key={ind}>{"\t"}{p}</li>
+      <ol className="list-decimal list-outside space-y-2 pl-6 text-gray-700">
+        {points.map((p, ind) => (
+          <li className="text-black font-medium" key={ind}>
+            {p}
+          </li>
         ))}
-      </ul>
+      </ol>
+
     </motion.div>
   );
 }

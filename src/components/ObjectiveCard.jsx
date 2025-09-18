@@ -8,19 +8,16 @@ const ObjectiveCard = ({
   index = 0,
 }) => {
   const variants = {
-    lightGreen: "bg-green-600",
-    green: "bg-green-600",
-    parrot: "bg-white",
+    green: "bg-[#207140]",
+    parrot: "bg-[#95c065]",
   };
 
   const textColors = {
-    lightGreen: "text-white",
     green: "text-white",
-    parrot: "text-gray-800",
+    parrot: "text-black",
   };
 
   const titleColors = {
-    lightGreen: "text-white",
     green: "text-white",
     parrot: "text-gray-900",
   };

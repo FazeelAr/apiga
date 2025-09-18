@@ -76,9 +76,9 @@ const APigaHeroTitle = () => {
           variants={titleVariants}
           className="relative mb-8"
         >
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-green-400 tracking-wider uppercase">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-[#207140]  tracking-wider uppercase">
             APIGA
-            <span className="block text-5xl md:text-7xl lg:text-8xl mt-2 text-green-500">
+            <span className="block text-5xl md:text-7xl lg:text-8xl mt-2 text-[#95c065]">
               PAKISTAN
             </span>
           </h1>
@@ -98,7 +98,7 @@ const APigaHeroTitle = () => {
         >
           <p className="text-xl md:text-3xl lg:text-4xl font-light text-white leading-relaxed tracking-wide">
             Shaping the future of{' '}
-            <span className="font-semibold text-green-300 relative">
+            <span className="font-semibold text-[#207140] relative">
               Internet
               <motion.span
                 className="absolute -bottom-1 left-0 h-0.5 bg-green-400"

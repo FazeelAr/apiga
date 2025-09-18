@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Home, Info, Calendar, Users, MapPin, Heart, UserCheck, Menu, X } from 'lucide-react';
-import APigaHeroTitle from './APigaHeroTitle';
+
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
         { path: '/', label: 'Home', icon: Home },
         { path: '/about', label: 'About', icon: Info },
         { path: '/schedule', label: 'Program Schedule', icon: Calendar },
-        //{ path: '/register', label: 'Register for Event', icon: Users },
+        { path: '/sponsors', label: 'sponsors', icon: Users },
         { path: '/team', label: 'Team', icon: UserCheck }
     ];
 

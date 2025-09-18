@@ -9,6 +9,7 @@ import About from './pages/About'
 import Register from './pages/Register'
 import Schedule from './pages/Schedule'
 import Team from './pages/Team'
+import Sponsors from './pages/Sponsors';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,7 +18,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/' element={<App />}>
           <Route index element={<Home />} />
           <Route path='about/' element={<About />} />
-          <Route path='register/' element={<Register />} />
+          <Route path='sponsors/' element={<Sponsors />} />
           <Route path='schedule/' element={<Schedule />} />
           <Route path='team/' element={<Team />} />
         </Route>

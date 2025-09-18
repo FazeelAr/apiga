@@ -8,8 +8,8 @@ function Home() {
     const objective = [
         {
             title: "Build Knowledge",
-            description: "Introduce Pakistani youth (18–35) to Internet governance, digital policy, and the multistakeholder model.",
-            variant: "lightGreen"
+            description: "Retain the age bracket from 18-30 years old since this has to match with the eligibility criteria and to encourage students and early professionals.",
+            variant: "green"
         },
         {
             title: "Capacity Building",
@@ -23,13 +23,18 @@ function Home() {
         },
         {
             title: "Networking & Collaboration",
-            description: "Connect participants with experts, policymakers, and peers in the Asia-Pacific Internet governance community.",
+            description: "Connect participants with experts, policymakers, and peers in the Pakistani and Asia-Pacific Internet Governance community.",
             variant: "parrot"
         },
         {
             title: "Local to Global Pathway",
-            description: "Prepare participants to represent Pakistan in the regional APIGA and other international forums such as ICANN, IGF, and APRIGF.",
+            description: "Prepare participants to represent Pakistan in the regional APIGA and other international forums such as ICANN, Global Internet Governance Forum (IGF), and Asia-Pacific Regional IGF meetings.",
             variant: "green"
+        },
+        {
+            title: "Sustainability & Leadership Development:",
+            description: "Foster a continuous pipeline of youth leaders who contribute to Pakistan’s digital future through mentorship, community initiatives, and long-term engagement in Internet governance.",
+            variant: "parrot"
         },
     ];
 
@@ -37,7 +42,7 @@ function Home() {
         {
             title: "Increased Awareness",
             description: "Participants gain a strong understanding of how the Internet works and how policies are shaped globally.",
-            variant: "lightGreen"
+            variant: "green"
         },
         {
             title: "Practical Experience",
@@ -59,6 +64,11 @@ function Home() {
             description: "Creation of a growing alumni network to sustain engagement, mentor future participants, and strengthen Pakistan’s voice in digital governance.",
             variant: "green"
         },
+        {
+            title: "Policy Contribution",
+            description: "Participants actively channel their insights into concrete recommendations that inform national and regional digital policy agendas.",
+            variant: "parrot"
+        },
     ];
 
     // Parent
@@ -72,16 +82,16 @@ function Home() {
                 href="https://www.icann.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-600 underline"
+                className="text-[#95c065] underline"
             >
                 The Internet Corporation for Assigned Names and Numbers (ICANN)
             </a>{" "}
             and {" "}
             <a
-                href="https://www.icann.org/"
+                href="https://www.kisa.or.kr/EN"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-600 underline"
+                className="text-[#95c065] underline"
             > The Korea Internet &amp; Security Agency (KISA).
             </a> Through their combined expertise and commitment, these organizations provide
             participants with comprehensive exposure to critical issues surrounding
@@ -90,10 +100,10 @@ function Home() {
         </>
     );
 
-    const icann = "The Internet Corporation for Assigned Names and Numbers (ICANN) is a global non-profit organization responsible for coordinating the unique identifiers that keep the Internet secure, stable, and interoperable. ICANN oversees the global Domain Name System (DNS), manages Internet Protocol (IP) addresses, and ensures that domain names (like .org, .com, or country codes) work everywhere in the world. ICANN follows a multistakeholder governance model, where governments, the private sector, civil society, academia, and technical experts all work together to make policies for the Internet’s naming and addressing systems. This inclusive approach ensures that decisions about the Internet are made transparently and with input from communities worldwide. Through its work, ICANN plays a vital role in maintaining the security, stability, and resiliency of the Internet, supporting its growth as a single, global, and open resource."
+    const icann = "The Internet Corporation for Assigned Names and Numbers (ICANN) is a global non-profit organization responsible for coordinating the unique identifiers that keep the Internet secure, stable, and interoperable. ICANN oversees the global Domain Name System (DNS), manages Internet Protocol (IP) addresses, and ensures that global top-level domains (e.g. .com, .org) and country-code top-level domains (e.g. .pk, .ca) are universally accessible. ICANN follows a multistakeholder governance model, where governments, the private sector, civil society, academia, and technical experts all work together to make policies for the Internet’s naming and addressing systems. This inclusive approach ensures that decisions about the Internet are made transparently and with input from communities worldwide. Through its work, ICANN plays a vital role in maintaining the security, stability, and resiliency of the Internet, supporting its growth as a single, global, and open resource."
 
     const eligibility = `An applicant is eligible for the fellowship if s/he will:`
-    const points = ['1. Be a citizen of Pakistan.',
+    const points = ['Be a citizen of Pakistan.',
         "Be between the age of 18 and 30 years.",
         "Be an undergraduate or graduate student enrolled in any discipline or an early career professional.",
         "Demonstrate interest in digital technologies, digital development, technology law, public policy, internet governance, digital rights, cybersecurity and closely related areas.",

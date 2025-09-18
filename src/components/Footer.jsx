@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-emerald-900 text-white py-8">
+    <footer className="bg-emerald-900 text-white py-8 mt-8">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Contact Us Section */}
         <div>
@@ -70,6 +70,14 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Quick Links</h3>
           <div className="space-y-2">
+            <a
+              href="https://www.icann.org/"
+              className="block text-emerald-200 hover:text-white transition-colors text-sm"
+            >ICANN</a>
+            <Link
+              to={"/"}
+              className="block text-emerald-200 hover:text-white transition-colors text-sm"
+            >APIGA</Link>
             <Link
               to={"schedule"}
               className="block text-emerald-200 hover:text-white transition-colors text-sm"
