@@ -74,6 +74,7 @@ const Footer = () => {
             <a
               href="https://www.icann.org/"
               className="block text-emerald-200 hover:text-white transition-colors text-sm"
+              target="_blank"
             >ICANN</a>
             <Link
               to={"/"}
