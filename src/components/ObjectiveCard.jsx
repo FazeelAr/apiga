@@ -13,13 +13,13 @@ const ObjectiveCard = ({
   };
 
   const textColors = {
-    green: "text-white",
-    parrot: "text-black",
+    green: "text-white/90",
+    parrot: "text-white/90",
   };
 
   const titleColors = {
     green: "text-white",
-    parrot: "text-gray-900",
+    parrot: "text-white",
   };
 
   const cardVariants = {
@@ -42,6 +42,7 @@ const ObjectiveCard = ({
 
   const hoverVariants = {
     scale: 1.05,
+    y: -8,
     transition: {
       duration: 0.3,
       ease: "easeInOut",
@@ -52,8 +53,9 @@ const ObjectiveCard = ({
     <motion.div
       className={`
         ${variants[variant]} 
-        rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300
+        rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500
         h-full flex flex-col justify-between min-h-[280px]
+        transform hover:-translate-y-2
       `}
       variants={cardVariants}
       initial="hidden"
@@ -71,7 +73,7 @@ const ObjectiveCard = ({
         </motion.h3>
 
         <motion.p
-          className={`text-lg leading-relaxed ${textColors[variant]} opacity-90`}
+          className={`text-lg leading-relaxed ${textColors[variant]}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: index * 0.2 + 0.5 }}
@@ -96,7 +98,7 @@ const ObjectivesSection = ({ title, objectives }) => {
   };
 
   return (
-    <div className="bg-gray-50 py-16 px-6">
+    <div className="bg-gradient-to-r from-gray-50 to-gray-100 py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -105,9 +107,10 @@ const ObjectivesSection = ({ title, objectives }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-wide">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
             {title}
           </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#207140] to-[#95c065] mx-auto"></div>
         </motion.div>
 
         {/* Cards Grid */}
