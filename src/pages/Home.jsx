@@ -1,8 +1,8 @@
-import React from "react";
 import APigaHeroTitle from "../components/APigaHeroTitle";
-import { Link } from "react-router-dom"
 import ObjectivesSection from "../components/ObjectiveCard";
 import TextBox from "../components/TextBox";
+import ApplyNowSection from "../components/ApplyNowSection";
+import ImportantDates from "../components/ImportantDates";
 
 function Home() {
     const objective = [
@@ -32,7 +32,7 @@ function Home() {
             variant: "green"
         },
         {
-            title: "Sustainability & Leadership Development:",
+            title: "Sustainability & Leadership Development",
             description: "Foster a continuous pipeline of youth leaders who contribute to Pakistan’s digital future through mentorship, community initiatives, and long-term engagement in Internet governance.",
             variant: "parrot"
         },
@@ -121,6 +121,8 @@ function Home() {
                 <ObjectivesSection title="Objectives OF APIGA Pakistan" objectives={objective} />
                 <ObjectivesSection title="Expected Outcomes" objectives={outcomes} />
                 <TextBox title={'Eligibility Criteria:'} text={eligibility} points={points}/>
+                <ApplyNowSection googleFormUrl="https://docs.google.com/forms/d/e/1FAIpQLSffGCVryOjI59XrMHWpMBF6nYX_up2R3oHgkRRZ8DRpq3SFtA/viewform"/>
+                <ImportantDates/>
             </main>
         </>
     )

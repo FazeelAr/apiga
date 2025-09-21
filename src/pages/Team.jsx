@@ -35,7 +35,7 @@ const Team = () => {
     },
     {
       name: 'Muhammad Sadeem Hannan',
-      designation: 'Sponsorship Head',
+      designation: 'Sponsorship and Logistics Head',
       imageUrl: '/assets/Sadeem.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/muhammad-sadeem-hannan/'
     }
