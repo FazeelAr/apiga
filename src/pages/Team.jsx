@@ -1,6 +1,5 @@
 import PersonCard from "../components/PersonCard";
 
-
 const Team = () => {
   // Sample data - replace with your actual data
   const teamMembers = [
@@ -43,16 +42,21 @@ const Team = () => {
   ];
 
   return (
-    <main className="min-h-screen bg-gray-50 py-12">
-      <div className="container mx-auto px-4">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white py-20">
+      <div className="container mx-auto px-6">
         {/* Page Title */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Team</h1>
-          <p className="text-lg text-gray-600">Meet the amazing people behind our success</p>
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            Our <span className="text-[#207140]">Team</span>
+          </h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#207140] to-[#95c065] mx-auto mb-8"></div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Meet the amazing people behind our success
+          </p>
         </div>
 
-        {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        {/* Team Grid - 3 columns for equal distribution */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
             <PersonCard
               key={index}

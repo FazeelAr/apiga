@@ -111,17 +111,19 @@ const Footer = () => {
             </div>
 
             {/* Embedded Map */}
-            <div className="w-full h-32 bg-emerald-800 rounded-lg overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.158!2d74.35334!3d31.50194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905de4b8f9b51%3A0x7c4d3e8f9c8b2a0d!2sUniversity%20of%20Engineering%20and%20Technology%20Lahore!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-lg"
-              ></iframe>
+            <div>
+              <div className="w-full h-32 bg-[#207140] rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.974802394433!2d74.35237477430677!3d31.579738844208773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191b273d6ed0c1%3A0x4dcac84ea2200944!2sUniversity%20of%20Engineering%20and%20Technology%20(UET)%2C%20Lahore!5e0!3m2!1sen!2s!4v1758452840523!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-lg"
+                />
+              </div>
             </div>
           </div>
         </div>
