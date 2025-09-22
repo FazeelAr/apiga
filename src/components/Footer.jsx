@@ -15,7 +15,7 @@ const Footer = () => {
 
             <div>
               <p className="text-white/80 mb-1 text-sm">
-                Participation Inquiries:
+                <strong>Participation Inquiries</strong>
               </p>
               <p className="text-white/80 text-sm">Muhammad Umair Ali</p>
               <a
@@ -27,24 +27,9 @@ const Footer = () => {
               </a>
             </div>
 
-            <div>
-              <p className="text-white/80 mb-1 text-sm">
-                Program and Fellowship
-              </p>
-              <p className="text-white/80 text-sm">Uzair Farooqi</p>
-              <a
-                href="https://mail.google.com/mail/?view=cm&to=uzaifarooqi@gmail.com&su=Event%20Registration"
-                target="_blank"
-                className="hover:text-[#95c065] transition-colors duration-300"
-              >
-                <p className="text-white/80 text-sm hover:text-[#95c065] transition-colors duration-300">
-                  uzaifarooqi@gmail.com
-                </p>
-              </a>
-            </div>
 
             <div>
-              <p className="text-white/80 mb-1 text-sm">Team Lead:</p>
+              <p className="text-white/80 mb-1 text-sm"><strong>Team Lead</strong></p>
               <p className="text-white/80 text-sm">Nawal Munir</p>
               <a
                 href="https://mail.google.com/mail/?view=cm&to=example@gmail.com&su=Event%20Registration"

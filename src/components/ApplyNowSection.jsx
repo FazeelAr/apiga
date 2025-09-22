@@ -28,8 +28,7 @@ const ApplyNowSection = ({
           {/* Main content */}
           <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              If you are a student currently enrolled in any tertiary institution within the Asia Pacific 
-              and want to make a change for the betterment of the Internet, this is the program for you.
+              Your journey to becoming an internet governance expert starts here. Apply now for Local APIGA Pakistan 2025.
             </p>
             
             {/* <p className="text-gray-600 italic">
