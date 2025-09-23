@@ -17,7 +17,6 @@ const Footer = () => {
               <p className="text-white/80 mb-1 text-sm">
                 <strong>Participation Inquiries</strong>
               </p>
-              <p className="text-white/80 text-sm">Muhammad Umair Ali</p>
               <a
                 href="https://mail.google.com/mail/?view=cm&to=example@gmail.com&su=Event%20Registration"
                 target="_blank"
