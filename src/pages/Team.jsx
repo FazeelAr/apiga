@@ -42,7 +42,7 @@ const Team = () => {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white py-20">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white py-20 pt-16">
       <div className="container mx-auto px-6">
         {/* Page Title */}
         <div className="text-center mb-16">

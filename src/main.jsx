@@ -13,7 +13,7 @@ import Sponsors from './pages/Sponsors';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
         <Route path='/' element={<App />}>
           <Route index element={<Home />} />

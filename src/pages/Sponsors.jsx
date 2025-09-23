@@ -30,7 +30,7 @@ const Sponsors = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-white">
+    <div className="bg-gradient-to-br from-gray-50 to-white pt-16">
       {/* Contact Section */}
       <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
         <div className="max-w-6xl mx-auto px-6">
@@ -65,7 +65,7 @@ const Sponsors = () => {
                   <div className="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
                     <Mail className="w-5 h-5 text-white mr-3" />
                     <a href="mailto:sadeem@gmail.com" className="text-white text-lg hover:text-[#95c065] transition-colors duration-300">
-                      sadeem@gmail.com
+                      sadeem@apiga.pk
                     </a>
                   </div>
                 </div>

@@ -21,25 +21,25 @@ const ImportantDatesSection = () => {
     {
       icon: Calendar,
       label: "Online application opens:",
-      date: "24 Sep",
+      date: "24 September, 2025",
       color: "text-[#95c065]"
     },
     {
       icon: Clock,
       label: "Application deadline:",
-      date: "20 Oct",
+      date: "20 October, 2025",
       color: "text-[#207140]"
     },
     {
       icon: Award,
       label: "Result announcement:",
-      date: "3rd Nov",
+      date: "3rd November, 2025",
       color: "text-[#95c065]"
     },
     {
       icon: Users,
       label: "Program dates:",
-      date: "17, 18 Nov",
+      date: "17-18 November, 2025",
       color: "text-[#207140]"
     }
   ];

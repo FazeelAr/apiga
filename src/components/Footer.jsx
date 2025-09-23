@@ -23,7 +23,7 @@ const Footer = () => {
                 target="_blank"
                 className="hover:text-[#95c065] transition-colors duration-300"
               >
-                <p className="text-white/80 text-sm hover:text-[#95c065] transition-colors duration-300">umair@gmail.com</p>
+                <p className="text-white/80 text-sm hover:text-[#95c065] transition-colors duration-300">info@apiga.pk</p>
               </a>
             </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
                 target="_blank"
                 className="hover:text-[#95c065] transition-colors duration-300"
               >
-                <p className="text-white/80 text-sm hover:text-[#95c065] transition-colors duration-300">naval@gmail.com</p>
+                <p className="text-white/80 text-sm hover:text-[#95c065] transition-colors duration-300">naval@apiga.pk</p>
               </a>
             </div>
           </div>

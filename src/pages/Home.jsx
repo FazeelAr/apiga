@@ -114,7 +114,7 @@ function Home() {
         <>
 
             {/* Content wrapper with proper spacing */}
-            <main className="min-h-screen bg-gray-50">
+            <main className="min-h-screen bg-gray-50 pt-16">
                 <APigaHeroTitle />
                 <TextBox title={'About APIGA'} text={apiga} />
                 <TextBox title={'About ICANN'} text={icann} />

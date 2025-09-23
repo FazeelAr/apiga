@@ -30,7 +30,7 @@ const ApiGaPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white pt-16">
       {/* About Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
