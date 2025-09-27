@@ -1,6 +1,6 @@
 import React from "react";
 import { MapPin, Calendar } from "lucide-react";
-import { Instagram, Linkedin } from 'lucide-react';
+import { Instagram, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -18,24 +18,29 @@ const Footer = () => {
                 <strong>Participation Inquiries</strong>
               </p>
               <a
-                href="https://mail.google.com/mail/?view=cm&to=example@gmail.com&su=Event%20Registration"
+                href="https://mail.google.com/mail/?view=cm&to=info@apiga.pk&su=Event%20Registration"
                 target="_blank"
                 className="hover:text-[#95c065] transition-colors duration-300"
               >
-                <p className="text-white/80 text-sm hover:text-[#95c065] transition-colors duration-300">info@apiga.pk</p>
+                <p className="text-white/80 text-sm hover:text-[#95c065] transition-colors duration-300">
+                  info@apiga.pk
+                </p>
               </a>
             </div>
 
-
             <div>
-              <p className="text-white/80 mb-1 text-sm"><strong>Team Lead</strong></p>
+              <p className="text-white/80 mb-1 text-sm">
+                <strong>Team Lead</strong>
+              </p>
               <p className="text-white/80 text-sm">Nawal Munir</p>
               <a
-                href="https://mail.google.com/mail/?view=cm&to=example@gmail.com&su=Event%20Registration"
+                href="https://mail.google.com/mail/?view=cm&to=nawal@apiga.pk&su=Event%20Registration"
                 target="_blank"
                 className="hover:text-[#95c065] transition-colors duration-300"
               >
-                <p className="text-white/80 text-sm hover:text-[#95c065] transition-colors duration-300">nawal@apiga.pk</p>
+                <p className="text-white/80 text-sm hover:text-[#95c065] transition-colors duration-300">
+                  nawal@apiga.pk
+                </p>
               </a>
             </div>
           </div>
@@ -62,11 +67,15 @@ const Footer = () => {
               href="https://www.icann.org/"
               className="block text-white/80 hover:text-[#95c065] transition-colors duration-300 text-sm"
               target="_blank"
-            >ICANN</a>
+            >
+              ICANN
+            </a>
             <Link
               to={"/"}
               className="block text-white/80 hover:text-[#95c065] transition-colors duration-300 text-sm"
-            >APIGA</Link>
+            >
+              APIGA
+            </Link>
             <Link
               to={"schedule"}
               className="block text-white/80 hover:text-[#95c065] transition-colors duration-300 text-sm"
@@ -140,7 +149,6 @@ const Footer = () => {
           </a>
         </div>
       </div>
-
     </footer>
   );
 };
