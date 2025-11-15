@@ -1,23 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Users, Handshake, Globe, Star, ArrowRight } from 'lucide-react';
+import { Mail, Users, Handshake, Globe, Star, ArrowRight, Building2, Award, Heart } from 'lucide-react';
 
 const Sponsors = () => {
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.8, ease: "easeOut" }
-  };
-
-  const fadeInLeft = {
-    initial: { opacity: 0, x: -60 },
-    animate: { opacity: 1, x: 0 },
-    transition: { duration: 0.8, ease: "easeOut" }
-  };
-
-  const fadeInRight = {
-    initial: { opacity: 0, x: 60 },
-    animate: { opacity: 1, x: 0 },
     transition: { duration: 0.8, ease: "easeOut" }
   };
 
@@ -75,6 +63,178 @@ const Sponsors = () => {
         </div>
       </section>
 
+      {/* Local Host Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <motion.div
+            {...fadeInUp}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Local <span className="text-[#207140]">Host</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#207140] to-[#95c065] mx-auto mb-8"></div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="max-w-2xl mx-auto"
+          >
+            <div className="bg-gradient-to-br from-[#207140] to-[#95c065] rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500">
+              <div className="bg-white rounded-2xl p-8 h-72 flex items-center justify-center">
+                <img 
+                  src="/assets/UET logo.png" 
+                  alt="UET Lahore Logo" 
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Supporting Organizations Section */}
+      <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div className="max-w-6xl mx-auto px-6">
+          <motion.div
+            {...fadeInUp}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Supporting <span className="text-[#207140]">Organizations</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#207140] to-[#95c065] mx-auto mb-8"></div>
+          </motion.div>
+
+          <motion.div
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, margin: "-100px" }}
+            className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto"
+          >
+            <motion.div variants={fadeInUp}>
+              <div className="bg-gradient-to-br from-[#207140] to-[#95c065] rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500">
+                <div className="bg-white rounded-2xl p-8 h-72 flex items-center justify-center">
+                  <img 
+                    src="/assets/APIGA logo.png" 
+                    alt="APIGA Logo" 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <div className="bg-gradient-to-br from-[#95c065] to-[#207140] rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500">
+                <div className="bg-white rounded-2xl p-8 h-72 flex items-center justify-center">
+                  <img 
+                    src="/assets/ICANN logo.png" 
+                    alt="ICANN Logo" 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <motion.div
+            {...fadeInUp}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Our <span className="text-[#207140]">Sponsors</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#207140] to-[#95c065] mx-auto mb-8"></div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="max-w-2xl mx-auto"
+          >
+            <div className="bg-gradient-to-br from-[#95c065] to-[#207140] rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500">
+              <div className="bg-white rounded-2xl p-8 h-72 flex items-center justify-center">
+                <img 
+                  src="\assets\AL Khidmat logo.png" 
+                  alt="Al Khidmat Logo" 
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Community Partners Section */}
+      <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div className="max-w-6xl mx-auto px-6">
+          <motion.div
+            {...fadeInUp}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Community <span className="text-[#207140]">Partners</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#207140] to-[#95c065] mx-auto mb-8"></div>
+          </motion.div>
+
+          <motion.div
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, margin: "-100px" }}
+            className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          >
+            <motion.div variants={fadeInUp}>
+              <div className="bg-gradient-to-br from-[#207140] to-[#95c065] rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500">
+                <div className="bg-white rounded-2xl p-6 h-64 flex items-center justify-center">
+                  <img 
+                    src="/assets/UNESCO logo.png" 
+                    alt="UNESCO IIOE Logo" 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <div className="bg-gradient-to-br from-[#95c065] to-[#207140] rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500">
+                <div className="bg-white rounded-2xl p-6 h-64 flex items-center justify-center">
+                  <img 
+                    src="\assets\pkSIG logo.png" 
+                    alt="pkSIG Logo" 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <div className="bg-gradient-to-br from-[#207140] to-[#95c065] rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500">
+                <div className="bg-white rounded-2xl p-6 h-64 flex items-center justify-center">
+                  <img 
+                    src="/assets/NetMission logo.png" 
+                    alt="NetMission.Asia Logo" 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Our Collaborators Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
@@ -106,9 +266,8 @@ const Sponsors = () => {
 
             {/* Collaborator Images Section */}
             <motion.div variants={fadeInUp} className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-gradient-to-br from-[#207140] to-[#95c065] rounded-3xl p-4 shadow-xl">
+              <div className="bg-gradient-to-br from-[#207140] to-[#95c065] rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500">
                 <div className="bg-white rounded-2xl p-6 h-64 flex items-center justify-center">
-                  {/* Replace with actual collaborator image */}
                   <img 
                     src="/assets/1000312439-removebg-preview.png" 
                     alt="Collaborator 1" 
@@ -117,9 +276,8 @@ const Sponsors = () => {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-[#95c065] to-[#207140] rounded-3xl p-4 shadow-xl">
+              <div className="bg-gradient-to-br from-[#95c065] to-[#207140] rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500">
                 <div className="bg-white rounded-2xl p-6 h-64 flex items-center justify-center">
-                  {/* Replace with actual collaborator image */}
                   <img 
                     src="/assets/IEEE UET (Blue).png" 
                     alt="Collaborator 2" 
