@@ -5,37 +5,37 @@ const Team = () => {
   const teamMembers = [
     {
       name: 'Nawal Munir',
-      designation: 'Team Lead',
+      designation: 'Program and Team Lead',
       imageUrl: '/assets/Nawaal.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/nawalmunirahmad/'
     },
     {
       name: 'Muhammad Umair Ali',
-      designation: 'Program and Fellowship Committee',
+      designation: 'Chair Fellowship and Program Committee',
       imageUrl: '/assets/Muhammad Umair Ali.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/muhammad-umair-ali-49b2981a1/'
     },
     {
       name: 'Uzair Farooqi',
-      designation: 'Program and Fellowship Committee',
+      designation: 'Fellowship and Program Committee Advisor',
       imageUrl: '/assets/uzair farooqi.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/uzair-farooqi/'
     },
     {
       name: 'Harisa Shahid',
-      designation: 'Program and Fellowship Committee',
+      designation: 'Vice Chair Program and Fellowship Committee',
       imageUrl: '/assets/Harisa.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/harisa-shahid-b04923184/'
     },
     {
       name: 'Khushbakht',
-      designation: 'Design Head',
+      designation: 'Design & Media Communications Head',
       imageUrl: '/assets/Khushbakht.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/khush84kht/'
     },
     {
       name: 'Muhammad Sadeem Hannan',
-      designation: 'Sponsorship and Logistics Head',
+      designation: 'Head of Operations and Sponsorship',
       imageUrl: '/assets/Sadeem.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/muhammad-sadeem-hannan/'
     }
