@@ -89,6 +89,7 @@ const Sponsors = () => {
                   src="/assets/UET logo.png" 
                   alt="UET Lahore Logo" 
                   className="max-w-full max-h-full object-contain"
+                  loading='lazy'
                 />
               </div>
             </div>
@@ -123,6 +124,7 @@ const Sponsors = () => {
                     src="/assets/APIGA logo.png" 
                     alt="APIGA Logo" 
                     className="max-w-full max-h-full object-contain"
+                    loading='lazy'
                   />
                 </div>
               </div>
@@ -135,6 +137,7 @@ const Sponsors = () => {
                     src="/assets/ICANN logo.png" 
                     alt="ICANN Logo" 
                     className="max-w-full max-h-full object-contain"
+                    loading='lazy'
                   />
                 </div>
               </div>
@@ -169,6 +172,7 @@ const Sponsors = () => {
                   src="\assets\AL Khidmat logo.png" 
                   alt="Al Khidmat Logo" 
                   className="max-w-full max-h-full object-contain"
+                  loading='lazy'
                 />
               </div>
             </div>
@@ -203,6 +207,7 @@ const Sponsors = () => {
                     src="/assets/UNESCO logo.png" 
                     alt="UNESCO IIOE Logo" 
                     className="max-w-full max-h-full object-contain"
+                    loading='lazy'
                   />
                 </div>
               </div>
@@ -215,6 +220,7 @@ const Sponsors = () => {
                     src="\assets\pkSIG logo.png" 
                     alt="pkSIG Logo" 
                     className="max-w-full max-h-full object-contain"
+                    loading='lazy'
                   />
                 </div>
               </div>
@@ -227,6 +233,7 @@ const Sponsors = () => {
                     src="/assets/NetMission logo.png" 
                     alt="NetMission.Asia Logo" 
                     className="max-w-full max-h-full object-contain"
+                    loading='lazy'
                   />
                 </div>
               </div>
@@ -272,6 +279,7 @@ const Sponsors = () => {
                     src="/assets/1000312439-removebg-preview.png" 
                     alt="Collaborator 1" 
                     className="max-w-full max-h-full object-contain"
+                    loading='lazy'
                   />
                 </div>
               </div>
@@ -282,6 +290,7 @@ const Sponsors = () => {
                     src="/assets/IEEE UET (Blue).png" 
                     alt="Collaborator 2" 
                     className="max-w-full max-h-full object-contain"
+                    loading='lazy'
                   />
                 </div>
               </div>
