@@ -19,49 +19,17 @@ const Sponsors = () => {
 
   return (
     <div className="bg-gradient-to-br from-gray-50 to-white pt-16">
-      {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+      {/* Title Section Section */}
+      
+      <motion.div
+            {...fadeInUp}
+            className="text-center mb-16 mt-10"
           >
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              For sponsorship and collaboration opportunities, please reach us out at:
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Partners <span className="text-[#207140]">and Sponsors</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#207140] to-[#95c065] mx-auto mb-6"></div>
           </motion.div>
-          <motion.div
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, margin: "-100px" }}
-            className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto"
-          >
-            <motion.div
-              variants={fadeInUp}
-              className="group"
-            >
-              <div className="bg-[#207140] rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                <div className="flex items-center mb-6">
-                  <Mail className="w-12 h-12 text-white mr-4" />
-                  <h3 className="text-3xl font-bold text-white">Sponsorship Lead</h3>
-                </div>
-                <div className="text-center">
-                  <h4 className="text-2xl font-semibold text-white mb-3">Muhammad Sadeem Hannan</h4>
-                  <div className="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
-                    <Mail className="w-5 h-5 text-white mr-3" />
-                    <a href="mailto:sadeem@apiga.pk" target='_blank' className="text-white text-lg hover:text-[#95c065] transition-colors duration-300">
-                      sadeem@apiga.pk
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Local Host Section */}
       <section className="py-20 bg-white">
@@ -345,6 +313,48 @@ const Sponsors = () => {
                   <h4 className="text-white font-semibold mb-2">Industry Leaders</h4>
                 </div>
               </motion.div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+      <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div className="max-w-6xl mx-auto px-6">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              For sponsorship and collaboration opportunities, please reach us out at:
+            </p>
+          </motion.div>
+          <motion.div
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, margin: "-100px" }}
+            className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto"
+          >
+            <motion.div
+              variants={fadeInUp}
+              className="group"
+            >
+              <div className="bg-[#207140] rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <div className="flex items-center mb-6">
+                  <Mail className="w-12 h-12 text-white mr-4" />
+                  <h3 className="text-3xl font-bold text-white">Sponsorship Lead</h3>
+                </div>
+                <div className="text-center">
+                  <h4 className="text-2xl font-semibold text-white mb-3">Muhammad Sadeem Hannan</h4>
+                  <div className="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
+                    <Mail className="w-5 h-5 text-white mr-3" />
+                    <a href="mailto:sadeem@apiga.pk" target='_blank' className="text-white text-lg hover:text-[#95c065] transition-colors duration-300">
+                      sadeem@apiga.pk
+                    </a>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </motion.div>
         </div>
